@@ -59,7 +59,7 @@ int main(void) {
                         for (int j = 0; j < 4; j++) {
                             cambiarAngulo(j + 1, posiciones[i][j]);
                         }
-                        for (int k = 0; k < 1000000; k++); // Retardo (ajustar según necesidad)
+                        for (int k = 0; k < 1000000; k++); // Retardo
                     }
                     break;
                 case 'i':
