@@ -11,7 +11,7 @@ void configurarADC(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
     // Habilita el reloj del ADC1
     RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
 
-    // Configura el ADC
+    // Configuración básica del ADC (PA0 a PA3 para los potenciómetros)
     ADC1->SQR3 = GPIO_Pin; // Configura el canal del ADC (0-15)
     ADC1->SMPR2 |= 0x7 << (GPIO_Pin * 3); // Tiempo de muestreo máximo
 
